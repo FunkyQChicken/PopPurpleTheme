@@ -9,7 +9,6 @@ styles = [
 ]
 variants = [
   'light',
-  'dark',
 ]
 
 theme_css = []
