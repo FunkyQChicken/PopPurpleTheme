@@ -9,15 +9,15 @@
 //$bg_color: #33324A;
 //$fg_color: #C0C0E5;
 
-$selected_fg_color: #000;
-$selected_bg_color: #94EBEB;
+$selected_fg_color: $select_color_fg;
+$selected_bg_color: $select_color;
 
 $selected_borders_color: darken($selected_bg_color, 30%);
 $borders_color: rgba(darken($bg_color, 10%), 0.5);
 $alt_borders_color: rgba(darken($bg_color, 18%), 0.5);
 $borders_edge: transparentize($fg_color, 0.93);
 $link_color: $text_blue;
-$link_visited_color: $text_orange;
+$link_visited_color: $highlight;
 $top_hilight: $borders_edge;
 $dark_fill: mix($borders_color, $bg_color, 50%);
 //$headerbar_color: #363636;
@@ -35,9 +35,9 @@ $error_color: #EA9090;
 $success_color: #90CFB0;
 $destructive_color: #EA9090;
 
-$osd_fg_color: #eeeeec;
+//$osd_fg_color: #eeeeec;
 $osd_text_color: white;
-$osd_bg_color: transparentize(darken(desaturate(#3d3846, 100%), 4%),0.3);
+//$osd_bg_color: transparentize(darken(desaturate(#3d3846, 100%), 4%),0.3);
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: transparentize(black, 0.3);
@@ -74,9 +74,9 @@ $backdrop_menu_color:  mix($backdrop_bg_color, $backdrop_base_color, 20%);
 //special cased widget colors
 $suggested_bg_color: #90CFB0;
 $suggested_border_color: $suggested_bg_color;
-$progress_bg_color: #6ACAD8;
+$progress_bg_color: $select_color;
 $progress_border_color: darken($progress_bg_color, 30%);
-$checkradio_bg_color:  #FBB86C;
-$checkradio_fg_color: #000;
+$checkradio_bg_color:  $highlight;
+$checkradio_fg_color: $select_color_fg;
 $checkradio_borders_color: $checkradio_bg_color;
 $spinner_fg_color: $fg_color;

@@ -4,20 +4,12 @@
 @import "pop_os-palette";
 
 @import "../../../../colors";
-//$base_color: #212134; 
-//$text_color: #cccccc;
-//$bg_color: #33324A;
-//$fg_color: #C0C0E5;
 
-$selected_fg_color: $black;
-$selected_bg_color: $blue;
 $selected_borders_color: if($variant == 'light', darken($selected_bg_color, 15%), darken($selected_bg_color, 30%));
 $borders_edge: if($variant == 'light', transparentize($white, 0.2), transparentize($fg_color, 0.93));
 $link_color: $text_blue;
 $link_visited_color: $text_purple;
 $top_hilight: $borders_edge;
-//$headerbar_bg_color: #22222E;
-$headerbar_fg_color: transparentize($white, 0.2);
 
 $scrollbar_bg_color: if($variant == 'light', mix($bg_color, $fg_color, 80%), mix($base_color, $bg_color, 50%));
 $scrollbar_slider_color: mix($fg_color, $bg_color, 60%);
@@ -29,9 +21,6 @@ $error_color: $red;
 $success_color: $green;
 $destructive_color: $red;
 
-$osd_fg_color: $bg_color; //$light_ui_500;
-$osd_text_color: $white;
-$osd_bg_color: transparentize(darken($osd_fg_color, 15%), 0.3);
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: transparentize($black, 0.3);
@@ -41,20 +30,20 @@ $sidebar_bg_color: mix($bg_color, $base_color, 50%);
 $tooltip_borders_color: transparentize($white, 0.9);
 $shadow_color: transparentize($black, 0.9);
 
-$drop_target_color: $highlights_orange;
+$drop_target_color: $highlight;
 
 //special cased widget colors
 $suggested_bg_color: $green;
 $suggested_border_color: if($variant == 'light', darken($suggested_bg_color, 15%), darken($suggested_bg_color, 30%));
 $progress_bg_color: $blue;
 $progress_border_color: if($variant == 'light', darken($progress_bg_color, 15%), darken($progress_bg_color, 30%));
-$checkradio_bg_color: $orange;
+$checkradio_bg_color: $highlight;
 $checkradio_fg_color: $black;
 $checkradio_borders_color: $checkradio_bg_color;
-$switch_bg_color: $orange;
+$switch_bg_color: $highlight;
 $switch_borders_color: if($variant == 'light',darken($switch_bg_color,15%),darken($switch_bg_color,30%));
-$focus_border_color: $orange;
+$focus_border_color: $highlight;
 $alt_focus_border_color: if($variant == 'light', transparentize($white, 0.2), transparentize($white,0.7));
 $dim_label_opacity: 0.7;
 
-$close_button_color: mix($orange, $red, 50%);
+$close_button_color: mix($highlight, $red, 50%);

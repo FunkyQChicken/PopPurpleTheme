@@ -18,10 +18,14 @@ $select_color: #D58CFF;//#63B1BC;
 $select_color_fg: #FFFFFF;
 
 $osd_bg_color: $bg_color; //#2e3436;
+$osd_text_color: #ffffff;
 $osd_fg_color: $fg_color; //#eeeeec;
 
 $headerbar_color: $base_color;
 $headerbar_bg_color: $bg_color;
+$headerbar_fg_color: transparentize(#ffffff, 0.2);
 
-// lol, 2 different definitions
+// lol, fixing bad def.s
+$selected_fg_color: $select_color_fg;
+$selected_bg_color: $select_color;
 $headerbar-color: $headerbar_color;

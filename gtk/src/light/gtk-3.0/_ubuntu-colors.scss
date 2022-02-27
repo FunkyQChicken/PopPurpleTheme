@@ -27,7 +27,6 @@ $terminal_borders_color: darken($terminal_bg_color, 10%);
 @import "../../../../colors";
 
 // Widget Colors
-//$headerbar_bg_color: #22222E;
 $menubar_bg_color: $headerbar_bg_color;
 $headerbar_fg_color: $porcelain;
 $headerbar_border_color: lighten($headerbar_bg_color, 8%);
