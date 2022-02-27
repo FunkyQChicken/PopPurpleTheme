@@ -6,18 +6,18 @@
 ## Pop-Purple
 This is an easily customizable derivative of Pop-OS!s theme.
 It themes both gtk and the popshell which is almost everything within the OS.
-There was probably a way of doing this neatly, but I just butchered the theme
-files a little bit. 
+
+There was probably a way of doing this neatly, that is not what I did though.
 
 ### Customizing
 Edit the `colors.scss` file to change the colors to be what you'd like.
+
 Edit the  `meson.build` file and change the project name from `PopPurple` to whatever you'd like.
 
 ### Notes
-To use the theme I suggest installing
-
-
-COSMIC Dock doesn't like being themed. I do not know why this is. This can be fixed 
+To use the theme I suggest installing [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) 
+after disabling COSMIC Dock.
+COSMIC Dock doesn't like being themed and I do not know why this is. This can be fixed 
 by just switching to Dash to Dock instead, which is what COSMIC Dock is based on, and additionally
 it is just kind of better.
 
