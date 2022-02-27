@@ -37,7 +37,8 @@ the colors directly. Either way, this hasn't been done yet, so for a few gtk
 elements, Pop's defualt blue and orange highlights can come through.
 
 Pop Launcher selected items are hard to read. I don't know where the selected item text color is, but it needs
-to be fixed.
+to be fixed. The color is chosen by the GTK theme even though the rest of the application is themed with
+the shell theme.
 
 -------------------
 
