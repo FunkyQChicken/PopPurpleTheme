@@ -3,36 +3,37 @@
 
 @import 'pop_os-colors';
 
-$base_color: if($variant == 'light', #ffffff, #212134); 
-$text_color: if($variant == 'light', #272727, #cccccc);
-$bg_color: if($variant == 'light', #F6F6F6, #33324A);
-$fg_color: if($variant == 'light', #2B2928, #C0C0E5);
+@import "../../../../colors";
+//$base_color: #212134; 
+//$text_color: #cccccc;
+//$bg_color: #33324A;
+//$fg_color: #C0C0E5;
 
 $selected_fg_color: #000;
-$selected_bg_color: if($variant=='light', #48b9c7, #94EBEB);
+$selected_bg_color: #94EBEB;
 
-$selected_borders_color: if($variant== 'light', darken($selected_bg_color, 15%), darken($selected_bg_color, 30%));
-$borders_color: if($variant == 'light', rgba(darken($bg_color, 18%), 0.5), rgba(darken($bg_color, 10%), 0.5));
-$alt_borders_color: if($variant == 'light', rgba(darken($bg_color, 24%), 0.5), rgba(darken($bg_color, 18%), 0.5));
-$borders_edge: if($variant == 'light', transparentize(white, 0.2), transparentize($fg_color, 0.93));
+$selected_borders_color: darken($selected_bg_color, 30%);
+$borders_color: rgba(darken($bg_color, 10%), 0.5);
+$alt_borders_color: rgba(darken($bg_color, 18%), 0.5);
+$borders_edge: transparentize($fg_color, 0.93);
 $link_color: $text_blue;
 $link_visited_color: $text_orange;
 $top_hilight: $borders_edge;
 $dark_fill: mix($borders_color, $bg_color, 50%);
-$headerbar_color: if($variant == 'light', #574F4A, #363636);
-$menu_color: if($variant == 'light', $base_color, mix($bg_color, $base_color, 20%));
+//$headerbar_color: #363636;
+$menu_color:  mix($bg_color, $base_color, 20%);
 $popover_bg_color: $bg_color;
 $popover_hover_color: lighten($bg_color, 5%);
 
-$scrollbar_bg_color: if($variant == 'light', mix($bg_color, $fg_color, 80%), mix($base_color, $bg_color, 50%));
+$scrollbar_bg_color: mix($base_color, $bg_color, 50%);
 $scrollbar_slider_color: mix($fg_color, $bg_color, 60%);
 $scrollbar_slider_hover_color: mix($fg_color, $bg_color, 80%);
-$scrollbar_slider_active_color: if($variant=='light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 10%));
+$scrollbar_slider_active_color: lighten($selected_bg_color, 10%);
 
-$warning_color: if($variant=='light', #FEDB40, #FFF19E);
-$error_color: if($variant=='light', #E56A54, #EA9090);
-$success_color: if($variant=='light', #82BF8C, #90CFB0);
-$destructive_color: if($variant=='light', #E56A54, #EA9090);
+$warning_color: #FFF19E;
+$error_color: #EA9090;
+$success_color: #90CFB0;
+$destructive_color: #EA9090;
 
 $osd_fg_color: #eeeeec;
 $osd_text_color: white;
@@ -55,11 +56,11 @@ $insensitive_bg_color: mix($bg_color, $base_color, 60%);
 $insensitive_borders_color: $borders_color;
 
 //colors for the backdrop state, derived from the main colors.
-$backdrop_base_color: if($variant == 'light', darken($base_color, 1%), lighten($base_color, 1%));
+$backdrop_base_color: lighten($base_color, 1%);
 $backdrop_text_color: mix($text_color, $backdrop_base_color, 80%);
 $backdrop_bg_color: $bg_color;
 $backdrop_fg_color: mix($fg_color, $backdrop_bg_color, 50%);
-$backdrop_insensitive_color: if($variant == 'light', darken($backdrop_bg_color, 15%), lighten($backdrop_bg_color, 15%));
+$backdrop_insensitive_color: lighten($backdrop_bg_color, 15%);
 $backdrop_selected_fg_color: rgba($selected_fg_color, 0.6);
 $backdrop_borders_color: mix($borders_color, $bg_color, 80%);
 $backdrop_dark_fill: mix($backdrop_borders_color, $backdrop_bg_color, 35%);
@@ -68,14 +69,14 @@ $backdrop_sidebar_bg_color: mix($backdrop_bg_color, $backdrop_base_color, 50%);
 $backdrop_scrollbar_bg_color: darken($backdrop_bg_color, 3%);
 $backdrop_scrollbar_slider_color: mix($backdrop_fg_color, $backdrop_bg_color, 40%);
 
-$backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdrop_bg_color, $backdrop_base_color, 20%));
+$backdrop_menu_color:  mix($backdrop_bg_color, $backdrop_base_color, 20%);
 
 //special cased widget colors
-$suggested_bg_color: if($variant=='light', #82BF8C, #90CFB0);
-$suggested_border_color: if($variant=='light', darken($suggested_bg_color, 15%), $suggested_bg_color);
-$progress_bg_color: if($variant=='light', #63B1BC, #6ACAD8);
-$progress_border_color: if($variant=='light', darken($progress_bg_color, 15%), darken($progress_bg_color, 30%));
-$checkradio_bg_color: if($variant=='light', #FFAD00, #FBB86C);
+$suggested_bg_color: #90CFB0;
+$suggested_border_color: $suggested_bg_color;
+$progress_bg_color: #6ACAD8;
+$progress_border_color: darken($progress_bg_color, 30%);
+$checkradio_bg_color:  #FBB86C;
 $checkradio_fg_color: #000;
 $checkradio_borders_color: $checkradio_bg_color;
 $spinner_fg_color: $fg_color;

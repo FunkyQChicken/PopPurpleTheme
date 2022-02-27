@@ -3,10 +3,11 @@
 
 @import "pop_os-palette";
 
-$base_color: if($variant == 'light', $white, $dark_neutral_grey_900);
-$text_color: if($variant == 'light', $black, $white);
-$bg_color: if($variant == 'light', $light_ui_300, $dark_neutral_grey_700);
-$fg_color: if($variant == 'light', $dark_ui_900, $light_ui_500);
+@import "../../../../colors";
+//$base_color: #212134; 
+//$text_color: #cccccc;
+//$bg_color: #33324A;
+//$fg_color: #C0C0E5;
 
 $selected_fg_color: $black;
 $selected_bg_color: $blue;
@@ -15,7 +16,7 @@ $borders_edge: if($variant == 'light', transparentize($white, 0.2), transparenti
 $link_color: $text_blue;
 $link_visited_color: $text_purple;
 $top_hilight: $borders_edge;
-$headerbar_bg_color: if($variant == 'light', $dark_warm_grey, desaturate($dark_ui_300, 100%));
+//$headerbar_bg_color: #22222E;
 $headerbar_fg_color: transparentize($white, 0.2);
 
 $scrollbar_bg_color: if($variant == 'light', mix($bg_color, $fg_color, 80%), mix($base_color, $bg_color, 50%));
@@ -28,9 +29,9 @@ $error_color: $red;
 $success_color: $green;
 $destructive_color: $red;
 
-$osd_fg_color: $light_ui_500;
+$osd_fg_color: $bg_color; //$light_ui_500;
 $osd_text_color: $white;
-$osd_bg_color: transparentize($dark_ui_700, 0.3);
+$osd_bg_color: transparentize(darken($osd_fg_color, 15%), 0.3);
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: transparentize($black, 0.3);
