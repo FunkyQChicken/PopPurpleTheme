@@ -14,6 +14,9 @@ Edit the `colors.scss` file to change the colors to be what you'd like.
 Edit the  `meson.build` file and change the project name from `PopPurple` to whatever you'd like.
 
 ### Notes
+To use the theme I suggest installing
+
+
 COSMIC Dock doesn't like being themed. I do not know why this is. This can be fixed 
 by just switching to Dash to Dock instead, which is what COSMIC Dock is based on, and additionally
 it is just kind of better.
@@ -23,11 +26,16 @@ dark version, and the light version has been stripped out almost entirely. there
 of this with some of the folder names, and additionally certain colors being set based on `$variant` 
 being 'light'. For our case, `$variant` will always be 'dark'.
 
+Also, remember to change the Active Hint Color in the pop shell menu. That isn't set by the system theme.
+
 ### ToDo
 Some of the colors are embedded in svg files. These could be changed, either by
 changing them to use an external css file with the wanted colors, or by replacing 
 the colors directly. Either way, this hasn't been done yet, so for a few gtk 
 elements, Pop's defualt blue and orange highlights can come through.
+
+Pop Launcher selected items are hard to read. I don't know where the selected item text color is, but it needs
+to be fixed.
 
 -------------------
 
