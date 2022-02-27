@@ -15,11 +15,13 @@ Edit the `colors.scss` file to change the colors to be what you'd like.
 Edit the  `meson.build` file and change the project name from `PopPurple` to whatever you'd like.
 
 ### Notes
-To use the theme I suggest installing [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) 
-after disabling COSMIC Dock.
+To use the theme install [User Themes X](https://extensions.gnome.org/extension/3019/user-themes-x/) gnome shell 
+extension. Configuring it within the extensions app should allow you to select the newly installed theme. 
+
 COSMIC Dock doesn't like being themed and I do not know why this is. This can be fixed 
-by just switching to Dash to Dock instead, which is what COSMIC Dock is based on, and additionally
-it is just kind of better.
+by just switching to [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) 
+instead, which is what COSMIC Dock is based on, and additionally
+it is just kind of better. Disable COSMIC Dock before installing Dash to Dock.
 
 Pop's gtk theme usually is built as both a light and dark version. This theme is based off of the
 dark version, and the light version has been stripped out almost entirely. there are still remnants
