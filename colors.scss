@@ -1,0 +1,27 @@
+
+// Main files to change.
+// gtk 4 _colors.scss
+// gtk 4 pop_os_colors.scss
+// gtk 3 _colors.scss
+// gtk 3 pop_os_colors.scss
+// gnome_shell _colors.scss
+// gnome_shell _pop_os_colors.scss
+
+
+$base_color: #212134; 
+$text_color: #cccccc;
+$bg_color: #33324A;
+$fg_color: #C0C0E5;
+$highlight: #EE4E88;//#FFAD00;
+
+$select_color: #D58CFF;//#63B1BC;
+$select_color_fg: #FFFFFF;
+
+$osd_bg_color: $bg_color; //#2e3436;
+$osd_fg_color: $fg_color; //#eeeeec;
+
+$headerbar_color: $base_color;
+$headerbar_bg_color: $bg_color;
+
+// lol, 2 different definitions
+$headerbar-color: $headerbar_color;

@@ -57,7 +57,7 @@ foreach variant: variants
   endif
 
   conf_data = configuration_data()
-  conf_data.set('ThemeVariant', variant)
+  conf_data.set('ThemeVariant', 'dark')
   theme_main_file = configure_file(
     input: 'gnome-shell.scss.in',
     output: 'gnome-shell@0@.scss'.format(variant_sufix),

@@ -6,9 +6,9 @@
 
 $search_entry_width: 320px;
 $search_entry_height: 36px;
-$search_entry_bg: #F6F6F6;
-$search_entry_fg: #2B2928;
-$search_entry_selection: #63B1BC;
+$search_entry_bg: $bg_color;
+$search_entry_fg: $fg_color;
+$search_entry_selection: $select_color;
 
 %search_entry,
 .search-entry {

@@ -87,16 +87,16 @@
   }
 
   &.running-dots .app-well-app.focused .overview-icon {
-    background-color: rgba(238, 238, 236, 0.2);
+    background-color: $red;
   }
 
   &.dashtodock {
     .app-well-app.focused .overview-icon {
-      background-color: rgba(238, 238, 236, 0.1);
+      background-color: $red;
     }
 
     #dash {
-      background: #2e3436;
+      background: $red;
     }
   }
 
@@ -107,14 +107,14 @@
   }
 
   .number-overlay {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 0.8);
+    color: $red;
+    background-color: $red;
     text-align: center;
   }
 
   .notification-badge {
-    color: rgba(255, 255, 255, 1);
-    background-color: $green;
+    color: $red;
+    background-color: $red;
     padding: 0.2em 0.5em;
     border-radius: 1em;
     border: 1px solid darken($green,10%);

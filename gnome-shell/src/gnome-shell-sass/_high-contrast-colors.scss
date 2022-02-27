@@ -1,14 +1,11 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
 @import "pop_os_colors";
+@import "../../../colors";
 
 
-$base_color: #222;
-$bg_color: #000;
-$fg_color: #fff;
-
-$selected_fg_color: #ffffff;
-$selected_bg_color: darken(#4a90d9,20%);
+$selected_fg_color: $select_color_fg;
+$selected_bg_color: darken($select_color,20%);
 $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color: darken($bg_color,12%);
 $borders_edge: transparentize($fg_color, 0.9);
@@ -16,18 +13,18 @@ $link_color: lighten($selected_bg_color,20%);
 $link_visited_color: lighten($selected_bg_color,10%);
 $top_hilight: $borders_edge;
 
-$warning_color: #f57900;
+$warning_color: $highlight;
 $error_color: #cc0000;
 $success_color: darken(#73d216,10%);
 $destructive_color: darken(#ef2929,10%);
 
-$osd_fg_color: #eeeeec;
-$osd_bg_color: #2e3436;
+//$osd_fg_color: #eeeeec;
+//$osd_bg_color: #2e3436;
 $osd_borders_color: rgba(0,0,0, 0.7);
 $osd_outer_borders_color: rgba(255,255,255, 0.1);
 
 $shadow_color: rgba(0,0,0, 0.1);
-$system_bg_color: desaturate(#241f31,100%); //neutralize the HIG color
+$system_bg_color: desaturate($base_color,100%); //neutralize the HIG color
 
 //insensitive state derived colors
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);
@@ -43,15 +40,13 @@ $backdrop_borders_color: mix($borders_color, $bg_color, 90%);
 $backdrop_dark_fill: mix($backdrop_borders_color,$backdrop_bg_color, 35%);
 
 //Colors for certain widgets
-$entry_color: if($variant=='light', $dark_ui_900, $light_ui_100);
-$close_button_color: mix($red, $orange, 50%);
+$entry_color: $fg_color;
+$close_button_color: mix($red, $highlight, 50%);
 
-$panel_bg_color: darken(#2B2928, 3%);;
+$panel_bg_color: darken($base_color, 3%);;
 $dash_bg_color: $panel_bg_color;
 $panel-alpha-value: 0.0;
 $panel_opaque_value: 0.0;
 
 $dash-alpha-value: 0.0;
 $dash-opaque-alpha-value: 0.0;
-
-$system_bg_color: #36322f; //previously "gdm_grey"
